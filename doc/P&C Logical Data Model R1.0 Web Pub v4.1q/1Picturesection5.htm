@@ -1,0 +1,55 @@
+<HTML>
+<HEAD>
+<TITLE>
+CA Report Template Builder - P&C LDM Web Publication v4q5 Document
+</TITLE>
+</HEAD>
+<BODY ONUNLOAD="close_winrep();">
+<SCRIPT>
+var win = null;
+function close_winrep()
+{
+ if (win && !win.closed)
+ {
+  win.close();
+ }
+}
+function show_rep(rep_pict)
+{
+ if (win && !win.closed)
+ {
+  win.frames[1].location.replace(rep_pict + "_2.htm");
+  win.focus();
+  return;
+ }
+ win = window.open(rep_pict + ".htm", "RTBViewReportPicture","titlebar=no,scrollbars=yes,top=0,left=0,resizable=yes,height=350,width=400");
+}
+</SCRIPT>
+<P><IMG src='images/diagram31.jpeg' usemap ='#mapdiagram'>
+<MAP name='mapdiagram'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd131'; show_rep(rep);" alt='Policy Deductible' shape='rect' coords='291,654,480,760'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd132'; show_rep(rep);" alt='Event' shape='rect' coords='46,488,127,542'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd133'; show_rep(rep);" alt='Policy Form' shape='rect' coords='524,302,640,371'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd134'; show_rep(rep);" alt='Insurable Object' shape='rect' coords='930,252,1108,321'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd135'; show_rep(rep);" alt='Party' shape='rect' coords='746,9,829,102'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd136'; show_rep(rep);" alt='Insurable Object Party Role' shape='rect' coords='916,94,1078,188'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd137'; show_rep(rep);" alt='Policy' shape='rect' coords='295,179,473,286'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd138'; show_rep(rep);" alt='Policy Coverage Detail' shape='rect' coords='494,419,663,563'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd139'; show_rep(rep);" alt='Policy Event' shape='rect' coords='72,603,188,710'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd140'; show_rep(rep);" alt='Policy Relationship' shape='rect' coords='692,152,844,245'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd141'; show_rep(rep);" alt='Location Address' shape='rect' coords='950,528,1079,672'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd142'; show_rep(rep);" alt='Product' shape='rect' coords='75,122,240,203'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd143'; show_rep(rep);" alt='Geographic Location' shape='rect' coords='862,356,1071,500'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd144'; show_rep(rep);" alt='Policy Amount' shape='rect' coords='598,624,799,806'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd145'; show_rep(rep);" alt='Agreement' shape='rect' coords='328,17,493,111'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd146'; show_rep(rep);" alt='Agreement Party Role' shape='rect' coords='541,79,678,173'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd147'; show_rep(rep);" alt='Coverage' shape='rect' coords='165,415,322,520'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd148'; show_rep(rep);" alt='Policy Coverage Part' shape='rect' coords='344,358,476,426'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd149'; show_rep(rep);" alt='Policy Limit' shape='rect' coords='290,538,479,644'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd150'; show_rep(rep);" alt='Coverage Part' shape='rect' coords='106,273,207,329'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd151'; show_rep(rep);" alt='Physical Location' shape='rect' coords='936,680,1098,836'>
+</MAP>
+</IMG>
+</P>
+</BODY>
+</HTML>

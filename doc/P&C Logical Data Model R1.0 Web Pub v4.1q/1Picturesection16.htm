@@ -1,0 +1,54 @@
+<HTML>
+<HEAD>
+<TITLE>
+CA Report Template Builder - P&C LDM Web Publication v4q5 Document
+</TITLE>
+</HEAD>
+<BODY ONUNLOAD="close_winrep();">
+<SCRIPT>
+var win = null;
+function close_winrep()
+{
+ if (win && !win.closed)
+ {
+  win.close();
+ }
+}
+function show_rep(rep_pict)
+{
+ if (win && !win.closed)
+ {
+  win.frames[1].location.replace(rep_pict + "_2.htm");
+  win.focus();
+  return;
+ }
+ win = window.open(rep_pict + ".htm", "RTBViewReportPicture","titlebar=no,scrollbars=yes,top=0,left=0,resizable=yes,height=350,width=400");
+}
+</SCRIPT>
+<P><IMG src='images/diagram42.jpeg' usemap ='#mapdiagram'>
+<MAP name='mapdiagram'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd420'; show_rep(rep);" alt='Administrative Organization Unit' shape='rect' coords='379,562,582,637'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd421'; show_rep(rep);" alt='Branch Office' shape='rect' coords='383,806,590,907'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd422'; show_rep(rep);" alt='Department' shape='rect' coords='372,683,583,771'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd423'; show_rep(rep);" alt='Staff Position Assignment' shape='rect' coords='26,378,237,493'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd424'; show_rep(rep);" alt='Organization' shape='rect' coords='294,187,495,327'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd425'; show_rep(rep);" alt='Organization Unit' shape='rect' coords='271,401,475,489'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd426'; show_rep(rep);" alt='Party' shape='rect' coords='383,21,591,98'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd427'; show_rep(rep);" alt='Regional Office' shape='rect' coords='147,805,357,906'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd428'; show_rep(rep);" alt='Field Organization Unit' shape='rect' coords='135,560,347,648'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd429'; show_rep(rep);" alt='Territory' shape='rect' coords='144,682,350,770'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd430'; show_rep(rep);" alt='For Profit Organization' shape='rect' coords='555,340,762,402'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd431'; show_rep(rep);" alt='Government Organization' shape='rect' coords='556,410,760,485'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd432'; show_rep(rep);" alt='Not For Profit Organization' shape='rect' coords='562,490,756,565'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd433'; show_rep(rep);" alt='Person' shape='rect' coords='29,206,244,258'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd434'; show_rep(rep);" alt='Grouping' shape='rect' coords='572,185,805,262'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd435'; show_rep(rep);" alt='Professional Group' shape='rect' coords='814,419,1028,483'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd436'; show_rep(rep);" alt='Team' shape='rect' coords='817,544,1037,595'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd437'; show_rep(rep);" alt='Project' shape='rect' coords='814,490,1002,541'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd438'; show_rep(rep);" alt='Household' shape='rect' coords='817,291,1033,406'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd439'; show_rep(rep);" alt='Party Relationship' shape='rect' coords='734,24,933,88'>
+</MAP>
+</IMG>
+</P>
+</BODY>
+</HTML>

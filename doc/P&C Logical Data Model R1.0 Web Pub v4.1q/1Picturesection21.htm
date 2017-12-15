@@ -1,0 +1,63 @@
+<HTML>
+<HEAD>
+<TITLE>
+CA Report Template Builder - P&C LDM Web Publication v4q5 Document
+</TITLE>
+</HEAD>
+<BODY ONUNLOAD="close_winrep();">
+<SCRIPT>
+var win = null;
+function close_winrep()
+{
+ if (win && !win.closed)
+ {
+  win.close();
+ }
+}
+function show_rep(rep_pict)
+{
+ if (win && !win.closed)
+ {
+  win.frames[1].location.replace(rep_pict + "_2.htm");
+  win.focus();
+  return;
+ }
+ win = window.open(rep_pict + ".htm", "RTBViewReportPicture","titlebar=no,scrollbars=yes,top=0,left=0,resizable=yes,height=350,width=400");
+}
+</SCRIPT>
+<P><IMG src='images/diagram47.jpeg' usemap ='#mapdiagram'>
+<MAP name='mapdiagram'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd555'; show_rep(rep);" alt='Assumed Policy Amount' shape='rect' coords='199,353,365,416'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd556'; show_rep(rep);" alt='Ceded Policy Amount' shape='rect' coords='199,425,365,487'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd557'; show_rep(rep);" alt='Credit Policy Amount' shape='rect' coords='387,319,553,382'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd558'; show_rep(rep);" alt='Direct Policy Amount' shape='rect' coords='199,283,365,345'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd559'; show_rep(rep);" alt='Fee' shape='rect' coords='7,444,173,506'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd560'; show_rep(rep);" alt='Policy Amount' shape='rect' coords='330,17,536,203'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd561'; show_rep(rep);" alt='Premium' shape='rect' coords='7,258,173,321'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd562'; show_rep(rep);" alt='Surcharge' shape='rect' coords='7,382,173,444'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd563'; show_rep(rep);" alt='Tax' shape='rect' coords='7,320,173,383'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd564'; show_rep(rep);" alt='Loss Payment' shape='rect' coords='955,348,1113,407'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd565'; show_rep(rep);" alt='Claim Amount' shape='rect' coords='806,28,949,151'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd566'; show_rep(rep);" alt='Claim Payment' shape='rect' coords='876,255,1034,314'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd567'; show_rep(rep);" alt='Claim Reserve' shape='rect' coords='683,255,841,314'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd568'; show_rep(rep);" alt='Deductible Recovery' shape='rect' coords='1158,618,1316,678'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd569'; show_rep(rep);" alt='Reinsurance Recovery' shape='rect' coords='938,683,1096,742'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd570'; show_rep(rep);" alt='Subrogation' shape='rect' coords='1158,683,1316,742'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd571'; show_rep(rep);" alt='Salvage' shape='rect' coords='938,618,1096,678'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd572'; show_rep(rep);" alt='Recovery' shape='rect' coords='1061,255,1219,314'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd573'; show_rep(rep);" alt='Debit Policy Amount' shape='rect' coords='389,391,555,454'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd574'; show_rep(rep);" alt='Credit Claim Amount' shape='rect' coords='406,482,563,541'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd575'; show_rep(rep);" alt='Direct Claim Amount' shape='rect' coords='700,547,858,606'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd576'; show_rep(rep);" alt='Debit Claim Amount' shape='rect' coords='406,550,563,610'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd577'; show_rep(rep);" alt='Assumed Claim Amount' shape='rect' coords='699,618,857,678'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd578'; show_rep(rep);" alt='Ceded Claim Amount' shape='rect' coords='698,683,856,742'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd579'; show_rep(rep);" alt='Expense Payment' shape='rect' coords='952,414,1110,474'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd580'; show_rep(rep);" alt='Loss Reserve' shape='rect' coords='743,348,901,407'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd581'; show_rep(rep);" alt='Expense Reserve' shape='rect' coords='748,414,906,474'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd582'; show_rep(rep);" alt='Loss Recovery' shape='rect' coords='939,549,1097,609'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd583'; show_rep(rep);" alt='Expense Recovery' shape='rect' coords='1157,549,1315,609'>
+</MAP>
+</IMG>
+</P>
+</BODY>
+</HTML>

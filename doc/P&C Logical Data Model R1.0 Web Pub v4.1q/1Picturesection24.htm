@@ -1,0 +1,53 @@
+<HTML>
+<HEAD>
+<TITLE>
+CA Report Template Builder - P&C LDM Web Publication v4q5 Document
+</TITLE>
+</HEAD>
+<BODY ONUNLOAD="close_winrep();">
+<SCRIPT>
+var win = null;
+function close_winrep()
+{
+ if (win && !win.closed)
+ {
+  win.close();
+ }
+}
+function show_rep(rep_pict)
+{
+ if (win && !win.closed)
+ {
+  win.frames[1].location.replace(rep_pict + "_2.htm");
+  win.focus();
+  return;
+ }
+ win = window.open(rep_pict + ".htm", "RTBViewReportPicture","titlebar=no,scrollbars=yes,top=0,left=0,resizable=yes,height=350,width=400");
+}
+</SCRIPT>
+<P><IMG src='images/diagram50.jpeg' usemap ='#mapdiagram'>
+<MAP name='mapdiagram'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd624'; show_rep(rep);" alt='Coverage Group' shape='rect' coords='32,456,236,556'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd625'; show_rep(rep);" alt='Insurance Class' shape='rect' coords='435,42,645,117'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd626'; show_rep(rep);" alt='Line Of Business' shape='rect' coords='402,190,610,266'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd627'; show_rep(rep);" alt='Line Of Business Group' shape='rect' coords='29,116,236,204'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd628'; show_rep(rep);" alt='Product' shape='rect' coords='482,373,697,463'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd629'; show_rep(rep);" alt='Product Coverage' shape='rect' coords='397,523,602,613'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd630'; show_rep(rep);" alt='Coverage Type' shape='rect' coords='23,295,225,371'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd631'; show_rep(rep);" alt='Coverage' shape='rect' coords='255,276,467,428'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd632'; show_rep(rep);" alt='Coverage Level' shape='rect' coords='350,623,554,686'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd633'; show_rep(rep);" alt='Coverage Limit Type' shape='rect' coords='473,698,677,760'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd634'; show_rep(rep);" alt='Company' shape='rect' coords='840,24,1044,87'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd635'; show_rep(rep);" alt='Product License' shape='rect' coords='627,217,831,331'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd636'; show_rep(rep);" alt='Company Jurisdiction' shape='rect' coords='656,87,877,175'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd637'; show_rep(rep);" alt='Geographic Location' shape='rect' coords='842,279,1067,420'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd638'; show_rep(rep);" alt='State' shape='rect' coords='915,635,1117,687'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd639'; show_rep(rep);" alt='Coverage Part' shape='rect' coords='25,212,208,289'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd640'; show_rep(rep);" alt='Rating Territory' shape='rect' coords='731,692,940,755'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd641'; show_rep(rep);" alt='Rating Territory Geographic Location' shape='rect' coords='710,521,925,637'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd642'; show_rep(rep);" alt='Insurance Rating Classification Code' shape='rect' coords='34,571,243,673'>
+</MAP>
+</IMG>
+</P>
+</BODY>
+</HTML>

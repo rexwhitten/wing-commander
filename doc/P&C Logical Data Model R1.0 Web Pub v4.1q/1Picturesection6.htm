@@ -1,0 +1,55 @@
+<HTML>
+<HEAD>
+<TITLE>
+CA Report Template Builder - P&C LDM Web Publication v4q5 Document
+</TITLE>
+</HEAD>
+<BODY ONUNLOAD="close_winrep();">
+<SCRIPT>
+var win = null;
+function close_winrep()
+{
+ if (win && !win.closed)
+ {
+  win.close();
+ }
+}
+function show_rep(rep_pict)
+{
+ if (win && !win.closed)
+ {
+  win.frames[1].location.replace(rep_pict + "_2.htm");
+  win.focus();
+  return;
+ }
+ win = window.open(rep_pict + ".htm", "RTBViewReportPicture","titlebar=no,scrollbars=yes,top=0,left=0,resizable=yes,height=350,width=400");
+}
+</SCRIPT>
+<P><IMG src='images/diagram32.jpeg' usemap ='#mapdiagram'>
+<MAP name='mapdiagram'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd152'; show_rep(rep);" alt='Arbitration' shape='rect' coords='876,591,1075,656'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd153'; show_rep(rep);" alt='Claim' shape='rect' coords='264,332,470,396'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd154'; show_rep(rep);" alt='Claim Amount' shape='rect' coords='259,727,477,829'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd155'; show_rep(rep);" alt='Claim Folder' shape='rect' coords='367,467,556,531'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd156'; show_rep(rep);" alt='Claim Offer' shape='rect' coords='486,694,694,758'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd157'; show_rep(rep);" alt='Claim Party Role' shape='rect' coords='510,102,703,167'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd158'; show_rep(rep);" alt='Court Jurisdiction' shape='rect' coords='883,202,1078,279'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd159'; show_rep(rep);" alt='Geographic Location' shape='rect' coords='27,167,252,307'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd160'; show_rep(rep);" alt='Insurable Object' shape='rect' coords='24,348,233,489'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd161'; show_rep(rep);" alt='Litigation' shape='rect' coords='891,368,1092,433'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd162'; show_rep(rep);" alt='Party' shape='rect' coords='591,15,800,92'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd163'; show_rep(rep);" alt='Occurrence' shape='rect' coords='267,14,478,167'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd164'; show_rep(rep);" alt='Catastrophe' shape='rect' coords='440,213,654,340'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd165'; show_rep(rep);" alt='Claim Arbitration' shape='rect' coords='759,515,940,579'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd166'; show_rep(rep);" alt='Claim Litigation' shape='rect' coords='752,447,956,511'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd167'; show_rep(rep);" alt='Litigation Party Role' shape='rect' coords='701,300,900,352'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd168'; show_rep(rep);" alt='Arbitration Party Role' shape='rect' coords='722,671,926,723'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd169'; show_rep(rep);" alt='Policy Coverage Detail' shape='rect' coords='21,548,227,613'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd170'; show_rep(rep);" alt='Claim Coverage' shape='rect' coords='23,686,235,750'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd171'; show_rep(rep);" alt='Claim Folder Document' shape='rect' coords='463,567,679,669'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd172'; show_rep(rep);" alt='Party Role' shape='rect' coords='856,83,1079,172'>
+</MAP>
+</IMG>
+</P>
+</BODY>
+</HTML>

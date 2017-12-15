@@ -1,0 +1,54 @@
+<HTML>
+<HEAD>
+<TITLE>
+CA Report Template Builder - P&C LDM Web Publication v4q5 Document
+</TITLE>
+</HEAD>
+<BODY ONUNLOAD="close_winrep();">
+<SCRIPT>
+var win = null;
+function close_winrep()
+{
+ if (win && !win.closed)
+ {
+  win.close();
+ }
+}
+function show_rep(rep_pict)
+{
+ if (win && !win.closed)
+ {
+  win.frames[1].location.replace(rep_pict + "_2.htm");
+  win.focus();
+  return;
+ }
+ win = window.open(rep_pict + ".htm", "RTBViewReportPicture","titlebar=no,scrollbars=yes,top=0,left=0,resizable=yes,height=350,width=400");
+}
+</SCRIPT>
+<P><IMG src='images/diagram48.jpeg' usemap ='#mapdiagram'>
+<MAP name='mapdiagram'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd584'; show_rep(rep);" alt='Audit' shape='rect' coords='707,767,925,946'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd585'; show_rep(rep);" alt='Binding' shape='rect' coords='53,589,273,666'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd586'; show_rep(rep);" alt='Cancel' shape='rect' coords='849,498,1050,587'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd587'; show_rep(rep);" alt='Endorsement' shape='rect' coords='588,492,814,620'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd588'; show_rep(rep);" alt='Flat' shape='rect' coords='935,685,1148,787'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd589'; show_rep(rep);" alt='Full Term' shape='rect' coords='425,722,648,799'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd590'; show_rep(rep);" alt='Mid Term' shape='rect' coords='475,818,683,933'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd591'; show_rep(rep);" alt='New Business' shape='rect' coords='339,497,546,625'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd592'; show_rep(rep);" alt='Pre Qualification' shape='rect' coords='29,490,233,593'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd593'; show_rep(rep);" alt='Pro Rata' shape='rect' coords='985,775,1197,915'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd594'; show_rep(rep);" alt='Quote' shape='rect' coords='95,683,296,760'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd595'; show_rep(rep);" alt='Reinstatement' shape='rect' coords='1090,498,1288,575'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd596'; show_rep(rep);" alt='Renewal' shape='rect' coords='122,783,334,860'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd597'; show_rep(rep);" alt='Short Rate' shape='rect' coords='1228,788,1437,903'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd598'; show_rep(rep);" alt='Business Event' shape='rect' coords='574,240,779,343'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd599'; show_rep(rep);" alt='Event' shape='rect' coords='541,26,745,114'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd600'; show_rep(rep);" alt='Life Event' shape='rect' coords='808,240,1012,343'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd601'; show_rep(rep);" alt='Claim Event' shape='rect' coords='1045,250,1251,314'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd602'; show_rep(rep);" alt='Policy Event' shape='rect' coords='317,248,533,325'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd603'; show_rep(rep);" alt='Policy' shape='rect' coords='83,128,279,192'>
+</MAP>
+</IMG>
+</P>
+</BODY>
+</HTML>

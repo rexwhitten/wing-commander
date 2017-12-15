@@ -1,0 +1,61 @@
+<HTML>
+<HEAD>
+<TITLE>
+CA Report Template Builder - P&C LDM Web Publication v4q5 Document
+</TITLE>
+</HEAD>
+<BODY ONUNLOAD="close_winrep();">
+<SCRIPT>
+var win = null;
+function close_winrep()
+{
+ if (win && !win.closed)
+ {
+  win.close();
+ }
+}
+function show_rep(rep_pict)
+{
+ if (win && !win.closed)
+ {
+  win.frames[1].location.replace(rep_pict + "_2.htm");
+  win.focus();
+  return;
+ }
+ win = window.open(rep_pict + ".htm", "RTBViewReportPicture","titlebar=no,scrollbars=yes,top=0,left=0,resizable=yes,height=350,width=400");
+}
+</SCRIPT>
+<P><IMG src='images/diagram34.jpeg' usemap ='#mapdiagram'>
+<MAP name='mapdiagram'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd194'; show_rep(rep);" alt='Assessment Result' shape='rect' coords='156,344,368,409'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd195'; show_rep(rep);" alt='Approval' shape='rect' coords='8,479,220,544'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd196'; show_rep(rep);" alt='Channel Score' shape='rect' coords='53,540,262,630'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd197'; show_rep(rep);" alt='Fraud Assessment' shape='rect' coords='698,821,902,924'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd198'; show_rep(rep);" alt='Credit Rating' shape='rect' coords='448,481,671,583'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd199'; show_rep(rep);" alt='Customer Score' shape='rect' coords='106,620,316,722'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd200'; show_rep(rep);" alt='Demographic Score' shape='rect' coords='214,825,417,928'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd201'; show_rep(rep);" alt='Financial Services Assessment' shape='rect' coords='629,710,839,825'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd202'; show_rep(rep);" alt='Financial Valuation' shape='rect' coords='517,581,715,633'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd203'; show_rep(rep);" alt='Medical Condition' shape='rect' coords='570,640,777,717'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd204'; show_rep(rep);" alt='Other Assessment Result' shape='rect' coords='1063,810,1267,887'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd205'; show_rep(rep);" alt='Physical Object Assessment' shape='rect' coords='865,483,1077,611'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd206'; show_rep(rep);" alt='Place Assessment' shape='rect' coords='938,608,1134,723'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd207'; show_rep(rep);" alt='Risk Factor Score' shape='rect' coords='148,728,359,817'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd208'; show_rep(rep);" alt='Agreement Assessment' shape='rect' coords='629,183,813,234'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd209'; show_rep(rep);" alt='Assessment' shape='rect' coords='486,290,691,392'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd210'; show_rep(rep);" alt='Object Assessment' shape='rect' coords='767,285,964,349'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd211'; show_rep(rep);" alt='Party' shape='rect' coords='310,40,519,117'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd212'; show_rep(rep);" alt='Party Assessment' shape='rect' coords='373,190,560,254'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd213'; show_rep(rep);" alt='Agreement' shape='rect' coords='545,29,759,132'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd214'; show_rep(rep);" alt='Insurable Object' shape='rect' coords='767,30,975,171'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd215'; show_rep(rep);" alt='Claim' shape='rect' coords='1003,46,1209,110'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd216'; show_rep(rep);" alt='Claim Assessment' shape='rect' coords='1019,265,1207,329'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd217'; show_rep(rep);" alt='Underwriting Assessment' shape='rect' coords='366,651,575,804'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd218'; show_rep(rep);" alt='Claim Evaluation Result' shape='rect' coords='990,737,1198,789'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd219'; show_rep(rep);" alt='Assesment Party Role' shape='rect' coords='85,154,295,206'>
+<AREA HREF="JAVASCRIPT:var rep='PictureTabLkd220'; show_rep(rep);" alt='Party Role' shape='rect' coords='90,255,313,344'>
+</MAP>
+</IMG>
+</P>
+</BODY>
+</HTML>

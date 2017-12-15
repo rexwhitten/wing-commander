@@ -4,15 +4,10 @@
 $current_directory = (Get-Item -Path ".\" -Verbose).FullName
 iterateFiles($current_directory);
 
-# build + test all solutions in src 
+# setup local cluster 
+& "cluster\DevClusterSetup.ps1"
 
-# prepare all docker containers ( Service Fabric projects in src)
+# build and deploy the service fabric solutions in src 
 
-# configure virtual networking
-
-# configure local service fabric cluster 
-
-# deploy all solutions to the service fabric cluster/nodes 
-
-# open a broweser to the main application
+# start all support containers 
 
