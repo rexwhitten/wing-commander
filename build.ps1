@@ -1,6 +1,9 @@
 # references
 . "scripts/iterate.ps1"
 
+# setp docker
+# https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-docker/configure-docker-daemon
+
 $current_directory = (Get-Item -Path ".\" -Verbose).FullName
 iterateFiles($current_directory);
 
