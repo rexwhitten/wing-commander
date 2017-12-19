@@ -1,40 +1,41 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
+using System.Web.Http;
+using Microsoft.Owin;
+using Owin;
+
+[assembly: OwinStartup(typeof(BaseService.Startup))]
 
 namespace BaseService
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public void Configuration(IAppBuilder app)
         {
-            Configuration = configuration;
+            // Configure Web API for self-host. 
+            var config = new HttpConfiguration();
+
+            config.Routes.MapHttpRoute(
+                name: "DefaultApi",
+                routeTemplate: "api/{controller}/{id}",
+                defaults: new { id = RouteParameter.Optional }
+            );
+
+            app.UseWebApi(config);
         }
 
-        public IConfiguration Configuration { get; }
-
-        // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+        internal static void ConfigureApp(IAppBuilder obj)
         {
-            services.AddMvc();
-        }
+            // Configure Web API for self-host. 
+            var config = new HttpConfiguration();
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
-        {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
+            config.Routes.MapHttpRoute(
+                name: "DefaultApi",
+                routeTemplate: "api/{controller}/{id}",
+                defaults: new { id = RouteParameter.Optional }
+            );
 
-            app.UseMvc();
+            obj.UseWebApi(config);
         }
     }
 }
