@@ -1,0 +1,58 @@
+# Setup Monitoring Server (elk stack)
+.\container\build.ps1 
+    -server "dev1monitor" 
+    -script .\env\servers\monitor.ps1
+    -image "microsoft/nanoserver"
+    -type_name "NanoServer";
+
+# Setup SQL Server (server-core: sql database engine)
+# https://docs.microsoft.com/en-us/sql/database-engine/install-windows/install-sql-server-on-server-core
+.\container\build.ps1 
+    -server "dev1sql1" 
+    -script .\env\servers\sql.ps1,
+    -image "microsoft/nanoserver"
+    -type_name "NanoServer";
+
+# Setup ETL Server (server-core : ssis)
+# https://docs.microsoft.com/en-us/sql/database-engine/install-windows/install-sql-server-on-server-core
+.\container\build.ps1 
+    -server "dev1etl1" 
+    -script .\env\servers\etl.ps1
+    -image "microsoft/nanoserver"
+    -type_name "NanoServer";
+
+# Setup Reporting/Analytics Server ( server-core : ssrs 2016)
+# https://docs.microsoft.com/en-us/sql/database-engine/install-windows/install-sql-server-on-server-core
+.\container\build.ps1 
+    -server "dev1rpt1" 
+    -script .\env\servers\rpt.ps1
+    -image "microsoft/nanoserver"
+    -type_name "NanoServer";
+
+# Setup Service Fabric (service-fabric : api services, workflow services, support services)
+.\container\build.ps1 
+    -server "dev1api1" 
+    -script .\env\servers\api.ps1 
+    -image "microsoft/nanoserver"
+    -type_name "NanoServer";
+
+# Setup Application Server (nano : node.js angular applications)
+.\container\build.ps1 
+    -server "dev1app1" 
+    -script .\env\servers\node_app.ps1 -
+    -image "microsoft/nanoserver"
+    -type_name "NanoServer";
+
+# Setup Web Application Server 2 (server-core : iis : mvc applications)
+.\container\build.ps1 
+    -server "dev1app2" 
+    -script .\env\servers\iis_app.ps1
+    -image "microsoft/nanoserver"
+    -type_name "NanoServer";
+
+# Setup Gateway Server (https, nginx)
+.\container\build.ps1 
+    -server "dev1web1" 
+    -script .\env\servers\web.ps1 
+    -image "microsoft/nanoserver"
+    -type_name "NanoServer";
