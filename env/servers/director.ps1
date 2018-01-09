@@ -6,11 +6,11 @@
 
 # Variables
 # -----------------------
-$env:TestVariable = "This is a test environment variable."
+$env:SERVER_TYPE = "DIRECTOR";
+$env:SI_ENV = "DEV";
 
 # Ports
 # -----------------------
-New-NetFirewallRule -DisplayName 'HTTP(S) Inbound' -Profile @('Domain', 'Private') -Direction Inbound -Action Allow -Protocol TCP -LocalPort @('80', '443')
 
 # Users  
 # -----------------------

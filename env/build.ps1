@@ -7,7 +7,8 @@
 
 # Setup Director Server 
 .\container\build.ps1 `
-    -server  "dev1director" `
+    -container_name  "DEVCOREDIRECTOR1" `
     -script ".\env\servers\director.ps1"  `
+    -machine_script ".\env\types\core\core.ps1" `
     -image  "microsoft/windowsservercore" `
-    -type_name "ServerCore"
+    -machine_name "DEVCOREDIRECTOR1"
