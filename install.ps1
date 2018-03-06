@@ -23,3 +23,6 @@ Start-Process `
     -FilePath 'C:\Program Files\Docker\Docker\DockerCli.exe' `
     -ArgumentList '-SwitchDaemon' `
     -Wait ;
+
+# Add Current Userto docker groups
+Add-LocalGroupMember -Group "docker-users" -Member whoami
