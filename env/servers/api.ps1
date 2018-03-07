@@ -1,3 +1,0 @@
-# api server setup script
-# 
-

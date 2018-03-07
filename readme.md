@@ -1,8 +1,13 @@
 # wing-commander 
 
+## Folder structure
 
-## Setup your development environment 
 
-Enable Powershell : set-executionpolicy remotesigned
+## Setup your development machine
 
-Run  .\install.ps1   
+Run  .\env\install.ps1   
+
+## Setup a local cluster 
+Run .\setup.ps1 
+
+## Deploy a specific branch to your cluster 
