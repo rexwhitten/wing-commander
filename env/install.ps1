@@ -5,7 +5,7 @@
 # We should be able to run this script several times in a row, without issue
 # *** THIS SCRIPT ONLY INSTALLS SYS DEPENDENCIES NOT SOURCE CONTROLLED CODE ***
 # --------------------------------------------------------------------------
-$error_action_preference = "Stop"
+$ErrorActionPreference = "Stop"
 $temp_path = "C:\temp"
 
 Write-Progress -Activity "Begin Installation..." `
