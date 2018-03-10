@@ -8,6 +8,19 @@
 $ErrorActionPreference = "Stop"
 $temp_path = "C:\temp"
 
+$ascii_art = "
+_           _  _           _    
+(_) _     _ (_)(_)_       _(_)   
+(_)(_)   (_)(_)  (_)_   _(_)     
+(_) (_)_(_) (_)    (_)_(_)       
+(_)   (_)   (_)     _(_)_        
+(_)         (_)   _(_) (_)_      
+(_)         (_) _(_)     (_)_    
+(_)         (_)(_)         (_)   
+                                 
+";
+
+Write-Host $ascii_art
 Write-Progress -Activity "Begin Installation..." `
     -Status "ok" `
     -PercentComplete (0)
