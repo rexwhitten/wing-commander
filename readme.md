@@ -12,14 +12,36 @@ Creates an entire Environment with the following :
 - Redis Container (Distirbuted cache and Pub/Sub)
 - SQL Server 2017 Container
 
-Makes use of build.ps1 scripts that are located in each git repository of the manifest. 
+Makes use of install.ps1 scripts that are located in each git repository of the manifest. 
+
+## Scripts 
+
+### Parameters 
+
+- by default a script with no parameters will assess the local environment, remove any current environment, and create a new one. 
+
+- *-remove* - will simply remove and now recreate. 
+
+## Powershell Scripts
+
+- [ps\functions.ps1](ps\functions.ps1) - Utiliy/Capability functions used through out the scripts.
+
+### Global Scripts 
+
+- [.\install.ps1](.\install.ps1) - will execute all sub-system install.ps1's. 
 
 
-## Setup your development machine
+### Sub-system folders
+- [sys\install.ps1](sys\install.ps1) - Setups/Updates/Removes System dependencies,runtimes, and frameworks on the machine the script is executed on. 
 
-Run  .\env\install.ps1   
+- [container\install.ps1](container\install.ps1) - Setups/Updates/Removes Hyper-V, Docker, and Windows Container Features on the machine the script is executed on. 
 
-## Setup a local cluster 
-Run .\setup.ps1 
+- [cluster\install.ps1](cluster\install.ps1) - Setups/updates/removes  A Service Fabric Cluster on the machine the script is executed on.
 
-## Deploy a specific branch to your cluster 
+
+## Activities
+
+### Deploy a specific branch to your cluster 
+
+
+### Setup an Environment
