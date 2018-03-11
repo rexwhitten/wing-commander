@@ -10,21 +10,17 @@ $ErrorActionPreference = "Stop"
 $temp_path = "C:\temp"
 
 $ascii_art = "
-_           _  _           _    
 (_) _     _ (_)(_)_       _(_)   
 (_)(_)   (_)(_)  (_)_   _(_)     
 (_) (_)_(_) (_)    (_)_(_)       
 (_)   (_)   (_)     _(_)_        
 (_)         (_)   _(_) (_)_      
 (_)         (_) _(_)     (_)_    
-(_)         (_)(_)         (_)   
-                                 
+(_)         (_)(_)         (_)      
 ";
 
 Write-Host $ascii_art
-Write-Progress -Activity "Begin Installation..." `
-    -Status "ok" `
-    -PercentComplete (0)
+Write-Host "[begin]::\install.ps1";
 
 $install_scripts = @(
     ".\sys\install.ps1",
@@ -44,3 +40,5 @@ For($i =0;$i -le $install_scripts.Count; $i++) {
         Invoke-Expression -Command $install_script;
     }
 }
+
+Write-Host "[end]::\install.ps1";

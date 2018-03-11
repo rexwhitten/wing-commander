@@ -41,7 +41,12 @@ Makes use of install.ps1 scripts that are located in each git repository of the 
 
 ## Activities
 
-### Deploy a specific branch to your cluster 
+### Installing the Required SDK's
 
+A few SDK's are required to use this tech stack. 
+- Service Fabric SDK ( via Web Platform Installer)
+- 
+
+### Deploy a specific branch to your cluster
 
 ### Setup an Environment
