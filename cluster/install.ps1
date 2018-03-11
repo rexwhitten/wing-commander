@@ -7,7 +7,7 @@ $ErrorActionPreference = "Stop"
 $sf_sf_program_data_path = "C:\ProgramData\SF\";
 $sf_server_package_path = "https://go.microsoft.com/fwlink/?linkid=839354";
 $sf_server_package_temp_path = "C:\temp\sf";
-$sf_local_root = "C:\SF"
+$sf_local_root = "C:\mx\SF"
 $sf_local_server = "$sf_local_root\server\"
 $sf_local_FabricDataRoot = "$sf_local_root\data\"
 $sf_local_FabricLogRoot = "$sf_local_root\log\"

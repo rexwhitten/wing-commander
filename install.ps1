@@ -22,6 +22,12 @@ $ascii_art = "
 Write-Host $ascii_art
 Write-Host "[begin]::\install.ps1";
 
+Reset-Directory -path "C:\mx"
+Reset-Directory -path "C:\mx\sf"
+Reset-Directory -path "C:\mx\containers"
+Reset-Directory -path "C:\mx\data"
+Reset-Directory -path "C:\mx\log"
+
 $install_scripts = @(
     ".\sys\install.ps1",
     ".\container\install.ps1",
