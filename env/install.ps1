@@ -3,6 +3,8 @@
 #
 Write-Host "[begin]::env\install.ps1";
 
+# will need to know what git repositories need to be cloned and built. 
+
 
 
 

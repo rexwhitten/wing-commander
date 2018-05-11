@@ -6,9 +6,7 @@ param (
     [string]$machine_script = ".\env\types\nano.ps1", 
     [string]$image = "microsoft/nanoserver",
     [string]$machine_name = "NanoServer"
-    #[Parameter(Mandatory=$true)][string]$username,
-    #[string]$password = $( Read-Host "Input password, please" )
- )
+)
 
 # modules 
 Import-Module Docker

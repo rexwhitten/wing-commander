@@ -1,5 +1,5 @@
 {
-    "name": "MX_Clu",
+    "name": "SampleCluster",
     "clusterConfigurationVersion": "1.0.0",
     "apiVersion": "10-2017",
     "nodes": [
@@ -84,11 +84,11 @@
           "parameters": [
             {
                 "name": "FabricDataRoot",
-                "value": "C:\\ProgramData\\SF"
+                "value": "C:\\mx\\SF"
             },
             {
                 "name": "FabricLogRoot",
-                "value": "C:\\ProgramData\\SF\\Log"
+                "value": "C:\\mx\\SF\\Log"
             }
           ]
         }
